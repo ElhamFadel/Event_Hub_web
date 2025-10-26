@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventHub – Platform Demo</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>EventHub</h1>
+    <nav>
+      <button id="logoutBtn" class="hidden">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="authSection">
+      <h2>Register / Login</h2>
+      <form id="authForm" class="card">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="row">
+          <button type="submit">Login</button>
+          <button type="button" id="registerBtn">Register</button>
+        </div>
+        <p class="hint">Demo auth only. Accounts are stored in-memory on the server.</p>
+      </form>
+    </section>
+
+    <section id="eventsSection" class="hidden">
+      <h2>Campus Events</h2>
+
+      <form id="eventForm" class="card">
+        <input id="title" placeholder="Event title" required />
+        <input id="date" type="date" required />
+        <input id="location" placeholder="Location" required />
+        <textarea id="details" placeholder="Details" rows="3"></textarea>
+        <div class="row">
+          <button type="submit">Add Event</button>
+          <button type="button" id="refreshBtn">Refresh</button>
+        </div>
+      </form>
+
+      <ul id="eventsList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>EventHub • Frontend (HTML, CSS, JS). Backend API: Node.js/Express.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
