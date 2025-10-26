@@ -1,7 +1,7 @@
 
-# EventHub – Final Project (All-in-One)
+# EventHub – Final Project 
 
-This is the full EventHub project without phase folders. You can run it locally and submit as a single package.
+This is the full EventHub project without. You can run it locally .
 
 ## Folders
 - `frontend/` – HTML/CSS/JS (no build)
